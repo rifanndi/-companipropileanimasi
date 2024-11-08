@@ -1275,23 +1275,26 @@ frame
 }
 
 .mil-frame {
-  padding: 50px 60px 60px 60px;
-  position: fixed;
-  z-index: 2;
-  pointer-events: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
+  padding: 50px 60px 60px 60px; /* Memberikan jarak (padding) di dalam elemen: atas 50px, kanan 60px, bawah 60px, kiri 60px */
+  position: fixed; /* Menempatkan elemen pada posisi tetap di layar meskipun halaman di-scroll */
+  z-index: 2; /* Menentukan lapisan elemen dalam konteks z-index untuk mengatur tumpang-tindih */
+  pointer-events: none; /* Elemen ini tidak akan merespon interaksi pengguna (misalnya, klik) */
+  display: -webkit-box; /* Display untuk browser WebKit dengan properti box */
+  display: -ms-flexbox; /* Display untuk browser berbasis Microsoft dengan properti flexbox */
+  display: flex; /* Menampilkan elemen sebagai flex container */
+  -webkit-box-orient: vertical; /* Mengatur orientasi elemen untuk browser WebKit menjadi vertikal */
+  -webkit-box-direction: normal; /* Mengatur arah elemen dalam browser WebKit (normal: dari atas ke bawah) */
+  -ms-flex-direction: column; /* Mengatur arah elemen dalam browser berbasis Microsoft menjadi kolom (vertikal) */
+  flex-direction: column; /* Mengatur elemen dalam flex container untuk disusun secara vertikal */
+  -webkit-box-pack: justify; /* Mengatur distribusi elemen di dalam flexbox untuk browser WebKit */
+  -ms-flex-pack: justify; /* Mengatur distribusi elemen di dalam flexbox untuk browser berbasis Microsoft */
+  justify-content: space-between; /* Mengatur elemen di dalam container agar memiliki jarak yang sama (spasi di antara elemen) */
+  width: 100%; /* Mengatur lebar elemen agar memenuhi 100% dari kontainer induknya */
+  height: 100%; /* Mengatur tinggi elemen agar memenuhi 100% dari kontainer induknya */
 }
+
+
+
 @media screen and (max-width: 1200px) {
   .mil-frame {
     padding: 30px;
@@ -1304,24 +1307,8 @@ frame
     height: 90px;
   }
 }
-@media screen and (max-width: 1200px) {
-  .mil-frame .mil-frame-top {
-    height: 90px;
-    background-color: rgba(0, 0, 0, 0.95);
-    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
-    padding: 0 30px;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-  }
-  .mil-frame .mil-frame-top .mil-logo {
-    color: rgb(255, 255, 255);
-  }
-  .mil-frame .mil-frame-top .mil-menu-btn span,
-  .mil-frame .mil-frame-top .mil-menu-btn span:after,
-  .mil-frame .mil-frame-top .mil-menu-btn span:before {
-    background: rgb(255, 255, 255);
-  }
-}
+
+
 .mil-frame .mil-frame-bottom {
   width: 100%;
   display: -webkit-box;
@@ -1407,11 +1394,12 @@ menu button
   display: block;
   width: 28px;
   height: 2.5px;
-  background: rgb(0, 0, 0);
+  background: rgb(70, 230, 6);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transition: inherit;
   transition: inherit;
+  m-bottom: 5vh;
 }
 .mil-menu-btn span {
   position: relative;
@@ -1468,19 +1456,7 @@ menu
   width: 100%;
   padding: 50px 60px;
 }
-@media screen and (max-width: 1200px) {
-  .mil-menu-frame .mil-frame-top {
-    display: none;
-  }
-}
-.mil-menu-frame .mil-frame-top .mil-logo {
-  color: rgb(255, 255, 255);
-}
-.mil-menu-frame .mil-frame-top .mil-menu-btn span,
-.mil-menu-frame .mil-frame-top .mil-menu-btn span:after,
-.mil-menu-frame .mil-frame-top .mil-menu-btn span:before {
-  background-color: rgb(255, 255, 255);
-}
+
 .mil-menu-frame .mil-main-menu {
   -webkit-transform: translateX(-30px);
   transform: translateX(-30px);
