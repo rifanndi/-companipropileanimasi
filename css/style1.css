@@ -410,7 +410,7 @@ a {
 }
 
 .mil-marker {
-  background-color: #037227;
+  background-color: #118034;
   padding: 0 5px;
 }
 
@@ -813,7 +813,7 @@ breadcrumbs
 
 /* -------------------------------------------
 
-backgrounds
+backgrounds home
 
 ------------------------------------------- */
 .mil-dark-bg {
@@ -827,11 +827,18 @@ backgrounds
   pointer-events: none;
   z-index: 0;
   background-color: #00741f;
+  background-image: url('../img/gdung.svg');
+  background-size: 55%; /* Sesuaikan ukuran gambar */
+  background-repeat: no-repeat;
+  
+  background-position: bottom 0px right 0px; /* Beri jarak 10px dari kanan dan bawah */
 }
+
 .mil-dark-bg .mi-invert-fix {
   height: 100%;
   position: relative;
   pointer-events: none;
+
   z-index: 0;
 }
 .mil-dark-bg .mi-invert-fix .container {
