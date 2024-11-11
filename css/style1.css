@@ -827,12 +827,29 @@ backgrounds home
   pointer-events: none;
   z-index: 0;
   background-color: #00741f;
-  background-image: url('../img/gdung.svg');
-  background-size: 55%; /* Sesuaikan ukuran gambar */
+  background-image: url('../img/INDOFON-BARUBARU.svg');
+  background-size: 28%; /* Sesuaikan ukuran gambar */
   background-repeat: no-repeat;
   
-  background-position: bottom 0px right 0px; /* Beri jarak 10px dari kanan dan bawah */
+  background-position: bottom -15px right -15px; /* Beri jarak 10px dari kanan dan bawah */
 }
+
+@media (max-width: 768px) {
+  .mil-dark-bg:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+    background-color: #00741f;
+    background-image: url(url('../img/INDOFON-BARUBARU.svg'));
+    background-size: 60%; /* Sesuaikan ukuran gambar untuk layar ponsel */
+    background-repeat: no-repeat;
+    background-position: bottom -15px right -15px; ; /* Beri jarak yang lebih proporsional di layar kecil */
+  }
+}
+
 
 .mil-dark-bg .mi-invert-fix {
   height: 100%;
