@@ -831,7 +831,7 @@ backgrounds home
   background-size: 28%; /* Sesuaikan ukuran gambar */
   background-repeat: no-repeat;
   
-  background-position: bottom -15px right -15px; /* Beri jarak 10px dari kanan dan bawah */
+  background-position: bottom -25px right -15px; /* Beri jarak 10px dari kanan dan bawah */
 }
 
 @media (max-width: 768px) {
