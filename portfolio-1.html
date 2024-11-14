@@ -17,17 +17,41 @@
     <link rel="stylesheet" href="css/style1.css" />
     <!-- page name -->
     <title>indofon</title>
+
+    <style>
+      .img-fullscreen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+      }
+      .img-fullscreen img {
+        max-width: 90%;
+        max-height: 90%;
+      }
+    </style>
   </head>
 
   <body>
     <!-- wrapper -->
     <div class="mil-wrapper" id="top">
+      <!-- Image Fullscreen Overlay -->
+      <div class="img-fullscreen" id="imgFullscreen">
+        <img id="fullscreenImg" src="" alt="Fullscreen Image" />
+      </div>
+
       <!-- cursor -->
       <div class="mil-ball">
         <span class="mil-icon-1">
           <svg viewBox="0 0 128 128">
             <path
-              d="M106.1,41.9c-1.2-1.2-3.1-1.2-4.2,0c-1.2,1.2-1.2,3.1,0,4.2L116.8,61H11.2l14.9-14.9c1.2-1.2,1.2-3.1,0-4.2	c-1.2-1.2-3.1-1.2-4.2,0l-20,20c-1.2,1.2-1.2,3.1,0,4.2l20,20c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9c1.2-1.2,1.2-3.1,0-4.2	L11.2,67h105.5l-14.9,14.9c-1.2,1.2-1.2,3.1,0,4.2c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9l20-20c1.2-1.2,1.2-3.1,0-4.2L106.1,41.9	z"
+              d="M106.1,41.9c-1.2-1.2-3.1-1.2-4.2,0c-1.2,1.2-1.2,3.1,0,4.2L116.8,61H11.2l14.9-14.9c1.2-1.2,1.2-3.1,0-4.2	c-1.2-1.2-3.1-1.2-4.2,0l-20,20c-1.2,1.2-1.2,3.1,0,4.2l20,20c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9c1.2-1.2,1.2-3.1,0-4.2	L11.2,67h105.5l-14.9,14.9c-1.2-1.2-1.2-3.1,0,4.2c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9l20-20c1.2-1.2,1.2-3.1,0-4.2L106.1,41.9	z"
             />
           </svg>
         </span>
@@ -52,7 +76,7 @@
                   src="img/indofon.svg"
                   alt="Indofon Logo"
                   style="width: 300px; height: auto"
-                  class="img"
+                  class="img clickable"
                 />
               </p>
             </div>
@@ -71,12 +95,14 @@
       <div class="mil-menu-frame">
         <!-- frame clone -->
         <div class="mil-frame-top">
-          <a href="index.html" class="mil-logo">
+          <div class="mil-logo">
             <img
               src="img/indofon.svg"
               alt="Indofon Logo"
-              style="width: 150px; height;"
-          /></a>
+              style="width: 150px; height: auto"
+              class="clickable"
+            />
+          </div>
           <div class="mil-menu-btn">
             <span></span>
           </div>
@@ -92,7 +118,7 @@
                       <a href="index.html">Homepage</a>
                     </li>
                     <li class="mil-has-children">
-                      <a href="#.">Portfolio</a>
+                      <a href="#">Portfolio</a>
                       <ul>
                         <li><a href="portfolio-1.html">Grid type 1</a></li>
                         <li><a href="portfolio-2.html">Grid type 2</a></li>
@@ -100,7 +126,7 @@
                       </ul>
                     </li>
                     <li class="mil-has-children">
-                      <a href="#.">Produk</a>
+                      <a href="#">Produk</a>
                       <ul>
                         <li><a href="services.html">Services List</a></li>
                         <li><a href="service.html">Single service</a></li>
@@ -113,7 +139,7 @@
           </div>
         </div>
       </div>
-      <!-- menu -->
+      <!-- menu end -->
 
       <!-- curtain -->
       <div class="mil-curtain"></div>
@@ -122,12 +148,14 @@
       <!-- frame -->
       <div class="mil-frame">
         <div class="mil-frame-top">
-          <a href="home-1.html" class="mil-logo">
+          <div class="mil-logo">
             <img
               src="img/indofon.svg"
               alt="Indofon Logo"
-              style="width: 150px; height;  "
-          /></a>
+              style="width: 150px; height: auto"
+              class="clickable"
+            />
+          </div>
           <div class="mil-menu-btn">
             <span></span>
           </div>
@@ -142,6 +170,7 @@
         </div>
       </div>
       <!-- frame end -->
+
       <!-- content -->
       <div class="mil-content">
         <div id="swupMain" class="mil-main-transition">
@@ -183,13 +212,14 @@
 
               <div class="row justify-content-between align-items-center">
                 <div class="col-lg-5">
-                  <a
-                    href="project-1.html"
-                    class="mil-portfolio-item mil-more mil-mb-60"
-                  >
+                  <div class="mil-portfolio-item mil-more mil-mb-60">
                     <div class="mil-cover-frame mil-vert mil-up">
                       <div class="mil-cover">
-                        <img src="img/works/Indofon_1.svg" alt="cover" />
+                        <img
+                          src="img/works/Indofon_1.svg"
+                          alt="cover"
+                          class="clickable"
+                        />
                       </div>
                     </div>
                     <div class="mil-descr">
@@ -199,20 +229,25 @@
                         </div>
                         <div class="mil-label mil-upper">may 24 2023</div>
                       </div>
-                      <h4 class="mil-up">Interior design studio</h4>
+                      <h4 class="mil-up">
+                        Indofon_ 1 keterangan Kantor Sekda Kabupaten Sleman 2020
+                      </h4>
                     </div>
-                  </a>
+                  </div>
                 </div>
                 <div class="col-lg-6">
-                  <a
-                    href="project-2.html"
+                  <div
                     class="mil-portfolio-item mil-more mil-parallax mil-mb-60"
                     data-value-1="60"
                     data-value-2="-60"
                   >
                     <div class="mil-cover-frame mil-hori mil-up">
                       <div class="mil-cover">
-                        <img src="img/works/Indofon_2.svg" alt="cover" />
+                        <img
+                          src="img/works/Indofon_2.svg"
+                          alt="cover"
+                          class="clickable"
+                        />
                       </div>
                     </div>
                     <div class="mil-descr">
@@ -220,20 +255,23 @@
                         <div class="mil-label mil-upper mil-accent">Design</div>
                         <div class="mil-label mil-upper">may 24 2023</div>
                       </div>
-                      <h4 class="mil-up">Home Security Camera</h4>
+                      <h4 class="mil-up">Puskesmas Soromandi Bima NTB</h4>
                     </div>
-                  </a>
+                  </div>
                 </div>
                 <div class="col-lg-6">
-                  <a
-                    href="project-3.html"
+                  <div
                     class="mil-portfolio-item mil-more mil-parallax mil-mb-60"
                     data-value-1="60"
                     data-value-2="-60"
                   >
                     <div class="mil-cover-frame mil-hori mil-up">
                       <div class="mil-cover">
-                        <img src="img/works/Indofon_3.svg" alt="cover" />
+                        <img
+                          src="img/works/Indofon_3.svg"
+                          alt="cover"
+                          class="clickable"
+                        />
                       </div>
                     </div>
                     <div class="mil-descr">
@@ -241,18 +279,21 @@
                         <div class="mil-label mil-upper mil-accent">Design</div>
                         <div class="mil-label mil-upper">may 24 2023</div>
                       </div>
-                      <h4 class="mil-up">Kemia Honest Skincare</h4>
+                      <h4 class="mil-up">
+                        Indofon_3 keterangan Polsek Pringgabaya Lombok Timur
+                      </h4>
                     </div>
-                  </a>
+                  </div>
                 </div>
                 <div class="col-lg-5">
-                  <a
-                    href="project-4.html"
-                    class="mil-portfolio-item mil-more mil-mb-60"
-                  >
+                  <div class="mil-portfolio-item mil-more mil-mb-60">
                     <div class="mil-cover-frame mil-vert mil-up">
                       <div class="mil-cover">
-                        <img src="img/works/Indofon_4.svg" alt="cover" />
+                        <img
+                          src="img/works/Indofon_4.svg"
+                          alt="cover"
+                          class="clickable"
+                        />
                       </div>
                     </div>
                     <div class="mil-descr">
@@ -262,18 +303,21 @@
                         </div>
                         <div class="mil-label mil-upper">may 24 2023</div>
                       </div>
-                      <h4 class="mil-up">Cascade of Lava</h4>
+                      <h4 class="mil-up">
+                        Indofon_4 keterangan Gedung Olahraga Kab. Kendal
+                      </h4>
                     </div>
-                  </a>
+                  </div>
                 </div>
                 <div class="col-lg-5">
-                  <a
-                    href="project-5.html"
-                    class="mil-portfolio-item mil-more mil-mb-60"
-                  >
+                  <div class="mil-portfolio-item mil-more mil-mb-60">
                     <div class="mil-cover-frame mil-vert mil-up">
                       <div class="mil-cover">
-                        <img src="img/works/Indofon_5.svg" alt="cover" />
+                        <img
+                          src="img/works/Indofon_5.svg"
+                          alt="cover"
+                          class="clickable"
+                        />
                       </div>
                     </div>
                     <div class="mil-descr">
@@ -281,20 +325,25 @@
                         <div class="mil-label mil-upper mil-accent">Design</div>
                         <div class="mil-label mil-upper">may 24 2023</div>
                       </div>
-                      <h4 class="mil-up">Air Pro by Molekule</h4>
+                      <h4 class="mil-up">
+                        Indofon_5 keterangan Masjid Ibnu Sina UGM
+                      </h4>
                     </div>
-                  </a>
+                  </div>
                 </div>
                 <div class="col-lg-6">
-                  <a
-                    href="project-6.html"
+                  <div
                     class="mil-portfolio-item mil-more mil-parallax mil-mb-60"
                     data-value-1="60"
                     data-value-2="-60"
                   >
                     <div class="mil-cover-frame mil-hori mil-up">
                       <div class="mil-cover">
-                        <img src="img/works/Indofon_6.svg" alt="cover" />
+                        <img
+                          src="img/works/Indofon_6.svg"
+                          alt="cover"
+                          class="clickable"
+                        />
                       </div>
                     </div>
                     <div class="mil-descr">
@@ -302,9 +351,11 @@
                         <div class="mil-label mil-upper mil-accent">Design</div>
                         <div class="mil-label mil-upper">may 24 2023</div>
                       </div>
-                      <h4 class="mil-up">Tony's Chocolonely</h4>
+                      <h4 class="mil-up">
+                        Indofon_6 keterangan Gedung BLP Yogyakarta
+                      </h4>
                     </div>
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -353,6 +404,7 @@
                       src="img/indofon.svg"
                       alt="Indofon Logo"
                       style="width: 100%; height: auto"
+                      class="clickable"
                     />
                   </div>
                   <p class="footer-text mt-3">
@@ -572,7 +624,7 @@
           <!-- hidden elements end -->
         </div>
       </div>
-      <!-- content -->
+      <!-- content end -->
     </div>
     <!-- wrapper end -->
 
@@ -594,5 +646,23 @@
     <script src="js/plugins/ScrollTo.min.js"></script>
     <!-- ashley js -->
     <script src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const fullscreenOverlay = document.getElementById("imgFullscreen");
+        const fullscreenImg = document.getElementById("fullscreenImg");
+        const clickableImages = document.querySelectorAll(".clickable");
+
+        clickableImages.forEach((img) => {
+          img.addEventListener("click", function () {
+            fullscreenImg.src = img.src;
+            fullscreenOverlay.style.display = "flex";
+          });
+        });
+
+        fullscreenOverlay.addEventListener("click", function () {
+          fullscreenOverlay.style.display = "none";
+        });
+      });
+    </script>
   </body>
 </html>
