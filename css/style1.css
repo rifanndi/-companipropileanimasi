@@ -2786,6 +2786,166 @@ social icons
 }
 
 
+/*- produk-*/
+/* CSS for responsive card layout with 20 cards, 6 cards per row on larger screens */
+
+.products-section {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-items: center;
+  align-items: start;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card .card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.card .btn {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 15px;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (min-width: 992px) {
+  .products-section {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .products-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .products-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Custom styles for cards on hover */
+.card:hover .btn {
+  background-color: #003d82;
+}
+/*galeri produk */
+
+/* CSS to make gallery responsive with 6 images per row */
+
+.mil-gallery .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mil-gallery .col-lg-2 {
+  flex: 1 1 calc(16.66% - 20px); /* 16.66% for 6 images per row, accounting for gap */
+  max-width: calc(16.66% - 20px);
+  margin: 10px;
+}
+
+.mil-gallery .mil-mb-30 {
+  margin-bottom: 30px;
+}
+
+.mil-gallery .col-lg-2 {
+  flex: 1 1 calc(20% - 20px); /* 20% for 5 images per row on laptop */
+  max-width: calc(20% - 20px);
+  margin: 10px;
+}
+
+@media (max-width: 1200px) {
+  .mil-gallery .col-lg-2 {
+      flex: 1 1 calc(25% - 20px); /* 4 images per row on medium screens */
+      max-width: calc(25% - 20px);
+  }
+}
+}
+
+@media (max-width: 992px) {
+  .mil-gallery .col-md-4 {
+      flex: 1 1 calc(25% - 20px); /* 4 images per row on tablets */
+      max-width: calc(25% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .mil-gallery .col-sm-6 {
+      flex: 1 1 calc(33.33% - 20px); /* 3 images per row on smaller tablets */
+      max-width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .mil-gallery .col-sm-6 {
+      flex: 1 1 calc(50% - 20px); /* 2 images per row on mobile */
+      max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 400px) {
+  .mil-gallery .col-sm-6 {
+      flex: 1 1 calc(100% - 20px); /* 1 image per row on very small screens */
+      max-width: calc(100% - 20px);
+  }
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mil-gallery {
+  justify-content: center;
+  gap: 10px;
+}
+
+
 /* -------------------------------------------
 
 revievs
