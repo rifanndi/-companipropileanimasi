@@ -29,6 +29,13 @@
       .mil-thin {
         color: black;
       }
+      hr.section-divider {
+        border: 1px solid #000;
+        margin: 40px 0 20px 0; /* Memperlebar jarak dari atas dan mempersempit jarak ke bawah */
+      }
+      .section-title {
+        margin-top: 10px; /* Mengurangi jarak di atas untuk bagian "Visi" */
+      }
     </style>
   </head>
   <body>
@@ -39,7 +46,7 @@
         <span class="mil-icon-1">
           <svg viewBox="0 0 128 128">
             <path
-              d="M106.1,41.9c-1.2-1.2-3.1-1.2-4.2,0c-1.2,1.2-1.2,3.1,0,4.2L116.8,61H11.2l14.9-14.9c1.2-1.2,1.2-3.1,0-4.2 c-1.2-1.2-3.1-1.2-4.2,0l-20,20c-1.2,1.2-1.2,3.1,0,4.2l20,20c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9c1.2-1.2,1.2-3.1,0-4.2 L11.2,67h105.5l-14.9,14.9c-1.2-1.2-1.2-3.1,0-4.2c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9l20-20c1.2-1.2,1.2-3.1,0-4.2 L106.1,41.9z"
+              d="M106.1,41.9c-1.2-1.2-3.1-1.2-4.2,0c-1.2,1.2-1.2,3.1,0,4.2L116.8,61H11.2l14.9-14.9c1.2-1.2,1.2-3.1,0-4.2 c-1.2-1.2-3.1-1.2-4.2,0l-20,20c-1.2-1.2-1.2,3.1,0,4.2l20,20c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9c1.2-1.2,1.2-3.1,0-4.2 L11.2,67h105.5l-14.9,14.9c-1.2-1.2-1.2-3.1,0-4.2c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9l20-20c1.2-1.2,1.2-3.1,0-4.2 L106.1,41.9z"
             />
           </svg>
         </span>
@@ -48,34 +55,15 @@
       </div>
       <!-- cursor end -->
 
-      <!-- preloader -->
-      <div class="mil-preloader">
-        <div class="mil-preloader-animation">
-          <div class="mil-pos-abs mil-animation-1">
-            <p class="mil-h3 mil-muted mil-thin">Produsen</p>
-            <p class="mil-h3 mil-muted">PVC Terbaik</p>
-            <p class="mil-h3 mil-muted mil-thin">Indonesia</p>
-          </div>
-          <div class="mil-pos-abs mil-animation-2">
-            <div class="mil-reveal-frame">
-              <p class="mil-reveal-box"></p>
-              <p class="mil-h3 mil-muted mil-thin">indofon.com</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- preloader end -->
-
-      <!-- scrollbar progress -->
-      <div class="mil-progress-track">
-        <div class="mil-progress"></div>
-      </div>
-      <!-- scrollbar progress end -->
-
       <!-- menu -->
       <div class="mil-menu-frame">
         <div class="mil-frame-top">
-          <a href="home-1.html" class="mil-logo">Indofon</a>
+          <a href="index.html" class="mil-logo">
+            <img
+              src="img/indofon.svg"
+              alt="Indofon Logo"
+              style="width: 150px; height: auto"
+          /></a>
           <div class="mil-menu-btn">
             <span></span>
           </div>
@@ -86,95 +74,22 @@
               <div class="col-xl-5">
                 <nav class="mil-main-menu" id="swupMenu">
                   <ul>
+                    <li class="mil-has-children mil-active">
+                      <a href="index.html">HOME</a>
+                    </li>
                     <li class="mil-has-children">
-                      <a href="#">Homepage</a>
-                      <ul>
-                        <li><a href="home-1.html">Landing page</a></li>
-                        <li><a href="home-2.html">Personal</a></li>
-                        <li><a href="portfolio-3.html">Portfolio slider</a></li>
-                      </ul>
+                      <a href="portfolio-1.html">Portfolio</a>
                     </li>
                     <li class="mil-has-children">
                       <a href="#">Produk</a>
                       <ul>
-                        <li><a href="listpvc.html">List PVC</a></li>
-                        <li><a href="ornamenpvc.html">Ornamen PVC</a></li>
+                        <li><a href="listpvc.html">List pvc</a></li>
+                        <li><a href="Ornamenpvc.html">Ornamen PVC</a></li>
                         <li><a href="plafonpvc.html">Plafon PVC</a></li>
-                      </ul>
-                    </li>
-                    <li class="mil-has-children">
-                      <a href="#">Tentang Kami</a>
-                      <ul>
-                        <li><a href="sejarah.html">Sejarah Indofon</a></li>
-                        <li><a href="profil.html">Profil Perusahaan</a></li>
-                      </ul>
-                    </li>
-                    <li class="mil-has-children">
-                      <a href="#">Kontak</a>
-                      <ul>
-                        <li><a href="contact.html">Hubungi Kami</a></li>
                       </ul>
                     </li>
                   </ul>
                 </nav>
-              </div>
-              <div class="col-xl-7">
-                <div class="mil-menu-right-frame">
-                  <div class="mil-animation-in">
-                    <div class="mil-animation-frame">
-                      <div
-                        class="mil-animation mil-position-1 mil-scale"
-                        data-value-1="2"
-                        data-value-2="2"
-                      ></div>
-                    </div>
-                  </div>
-                  <div class="mil-menu-right">
-                    <div class="row">
-                      <div class="col-lg-8 mil-mb-60">
-                        <h6 class="mil-muted mil-mb-30">Layanan Kami</h6>
-                        <ul class="mil-menu-list">
-                          <li>
-                            <a href="service-1.html" class="mil-light-soft"
-                              >Pemasangan Plafon PVC</a
-                            >
-                          </li>
-                          <li>
-                            <a href="service-2.html" class="mil-light-soft"
-                              >Desain Interior</a
-                            >
-                          </li>
-                          <li>
-                            <a href="service-3.html" class="mil-light-soft"
-                              >Perawatan PVC</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="col-lg-4 mil-mb-60">
-                        <h6 class="mil-muted mil-mb-30">Tautan Berguna</h6>
-                        <ul class="mil-menu-list">
-                          <li>
-                            <a href="#" class="mil-light-soft"
-                              >Kebijakan Privasi</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#" class="mil-light-soft"
-                              >Syarat dan Ketentuan</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#" class="mil-light-soft"
-                              >Kebijakan Cookie</a
-                            >
-                          </li>
-                          <li><a href="#" class="mil-light-soft">Karir</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -182,61 +97,15 @@
       </div>
       <!-- menu end -->
 
-      <!-- frame -->
-      <div class="mil-frame">
-        <div class="mil-frame-top">
-          <a href="home-1.html" class="mil-logo">Indofon</a>
-          <div class="mil-menu-btn">
-            <span></span>
-          </div>
-        </div>
-        <div class="mil-frame-bottom">
-          <div class="mil-current-page"></div>
-          <div class="mil-back-to-top">
-            <a href="#top" class="mil-link mil-dark mil-arrow-place">
-              <span>Back to top</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- frame end -->
-
       <!-- content -->
       <div class="mil-content">
         <div id="swupMain" class="mil-main-transition">
-          <!-- banner -->
-          <div class="mil-inner-banner">
-            <div class="mil-banner-content mil-up">
-              <div class="mil-animation-frame">
-                <div
-                  class="mil-animation mil-position-4 mil-dark mil-scale"
-                  data-value-1="6"
-                  data-value-2="1.4"
-                ></div>
-              </div>
-              <div class="container">
-                <ul class="mil-breadcrumbs mil-mb-60">
-                  <li><a href="home-1.html">Homepage</a></li>
-                  <li><a href="profil.html">Profil Perusahaan</a></li>
-                </ul>
-                <div style="text-align: center">
-                  <img
-                    src="/mnt/data/image.png"
-                    alt="Profil Perusahaan"
-                    style="max-width: 100%; height: auto"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- banner end -->
-
           <!-- profil perusahaan -->
           <section id="profil">
             <div class="container mil-p-120-90">
               <div class="row">
                 <div class="col-lg-12">
-                  <h2 class="mil-mb-30">Sejarah Indofon</h2>
+                  <h4 class="mil-mb-30">Sejarah Indofon</h4>
                   <p class="mil-light-soft">
                     PT. INDONESIA PLAFON SEMESTA adalah sebuah perusahaan yang
                     bergerak di bidang Produksi dan Distribusi Material Building
@@ -251,8 +120,8 @@
                     kami.
                   </p>
 
-                  <h2 class="mil-mt-60 mil-mb-30">Profil Perusahaan</h2>
-                  <p class="mil-light-soft">
+                  <h4 class="mil-mt-60 mil-mb-30">Profil Perusahaan</h4>
+                  <p class="mil-light-soft mb-50">
                     PT. INDONESIA PLAFON SEMESTA selalu mengutamakan kualitas
                     produk dan pelayanan yang diberikan kepada konsumen. Mutu
                     dan kualitas yang terbaik sehingga bisa memuaskan para
@@ -265,14 +134,24 @@
                     mengedepankan kualitas bahan dan hasil pemasangan.
                   </p>
 
-                  <h2 class="mil-mt-60 mil-mb-30">Visi dan Misi</h2>
-                  <h3 class="mil-mb-20">Visi</h3>
+                  <!-- Garis pemisah antara Profil Perusahaan dan Visi -->
+                  <hr class="section-divider" />
+
+                  <h4
+                    class="mil-mb-20 section-title"
+                    style="text-align: center"
+                  >
+                    Visi
+                  </h4>
                   <p class="mil-light-soft">
                     Menjadi perusahaan yang mampu menyediakan kebutuhan Material
                     bangunan spesialis Plafon yang berkualitas bagi perusahaan,
                     instansi, maupun individu.
                   </p>
-                  <h3 class="mil-mt-40 mil-mb-20">Misi</h3>
+
+                  <h4 class="mil-mt-40 mil-mb-20" style="text-align: center">
+                    Misi
+                  </h4>
                   <ul class="mil-light-soft">
                     <li>
                       Menghasilkan produk berkualitas yang berguna untuk
@@ -297,179 +176,96 @@
             </div>
           </section>
           <!-- profil perusahaan end -->
-
-          <!-- call to action -->
-          <section class="mil-soft-bg">
-            <div class="container mil-p-120-120">
-              <div class="row">
-                <div class="col-lg-10">
-                  <span
-                    class="mil-suptitle mil-suptitle-right mil-suptitle-dark mil-up"
-                    >Ingin mengetahui lebih lanjut tentang produk kami? Hubungi
-                    kami dan kami akan membantu Anda menemukan solusi yang
-                    tepat.</span
-                  >
-                </div>
-              </div>
-              <div class="mil-center">
-                <h2 class="mil-up mil-mb-60">
-                  Siap
-                  <span class="mil-thin">mengubah ruang Anda?</span> Hubungi
-                  kami <span class="mil-thin">sekarang</span>
-                </h2>
-                <div class="mil-up">
-                  <a href="contact.html" class="mil-button mil-arrow-place"
-                    ><span>Hubungi Kami</span></a
-                  >
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- call to action end -->
-
-          <!-- footer -->
-          <footer class="mil-dark-bg">
-            <div class="mi-invert-fix">
-              <div class="container mil-p-120-60">
-                <div class="row justify-content-between">
-                  <div class="col-md-4 col-lg-4 mil-mb-60">
-                    <div class="mil-muted mil-logo mil-up mil-mb-30">
-                      Indofon.
-                    </div>
-                    <p class="mil-light-soft mil-up mil-mb-30">
-                      Subscribe our newsletter:
-                    </p>
-                    <form class="mil-subscribe-form mil-up">
-                      <input type="text" placeholder="Enter our email" />
-                      <button
-                        type="submit"
-                        class="mil-button mil-icon-button-sm mil-arrow-place"
-                      ></button>
-                    </form>
-                  </div>
-                  <div class="col-md-7 col-lg-6">
-                    <div class="row justify-content-end">
-                      <div class="col-md-6 col-lg-7">
-                        <nav class="mil-footer-menu mil-mb-60">
-                          <ul>
-                            <li class="mil-up mil-active">
-                              <a href="home-1.html">Home</a>
-                            </li>
-                            <li class="mil-up">
-                              <a href="portfolio-1.html">Produk</a>
-                            </li>
-                            <li class="mil-up">
-                              <a href="services.html">Layanan</a>
-                            </li>
-                            <li class="mil-up">
-                              <a href="contact.html">Kontak</a>
-                            </li>
-                          </ul>
-                        </nav>
-                      </div>
-                      <div class="col-md-6 col-lg-5">
-                        <ul class="mil-menu-list mil-up mil-mb-60">
-                          <li>
-                            <a href="#" class="mil-light-soft"
-                              >Kebijakan Privasi</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#" class="mil-light-soft"
-                              >Syarat dan Ketentuan</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#" class="mil-light-soft"
-                              >Kebijakan Cookie</a
-                            >
-                          </li>
-                          <li><a href="#" class="mil-light-soft">Karir</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row justify-content-between flex-sm-row-reverse">
-                  <div class="col-md-7 col-lg-6">
-                    <div class="row justify-content-between">
-                      <div class="col-md-6 col-lg-5 mil-mb-60">
-                        <h6 class="mil-muted mil-up mil-mb-30">Indonesia</h6>
-                        <p class="mil-light-soft mil-up">
-                          Jl. Industri No. 123, Jakarta
-                          <span class="mil-no-wrap">+62 123 456 789</span>
-                        </p>
-                      </div>
-                      <div class="col-md-6 col-lg-5 mil-mb-60">
-                        <h6 class="mil-muted mil-up mil-mb-30">
-                          Cabang Surabaya
-                        </h6>
-                        <p class="mil-light-soft mil-up">
-                          Jl. Raya No. 456, Surabaya
-                          <span class="mil-no-wrap">+62 987 654 321</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-6 mil-mb-60">
-                    <div class="mil-vert-between">
-                      <div class="mil-mb-30">
-                        <ul class="mil-social-icons mil-up">
-                          <li>
-                            <a href="#" target="_blank" class="social-icon">
-                              <i class="far fa-circle"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="#" target="_blank" class="social-icon">
-                              <i class="far fa-circle"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="#" target="_blank" class="social-icon">
-                              <i class="far fa-circle"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="#" target="_blank" class="social-icon">
-                              <i class="far fa-circle"></i
-                            ></a>
-                          </li>
-                        </ul>
-                      </div>
-                      <p class="mil-light-soft mil-up">
-                        © Hak Cipta 2024 - Indofon. All Rights Reserved.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </footer>
-          <!-- footer end -->
         </div>
       </div>
       <!-- content end -->
-    </div>
-    <!-- wrapper end -->
 
-    <!-- jQuery js -->
-    <script src="js/plugins/jquery.min.js"></script>
-    <!-- swup js -->
-    <script src="js/plugins/swup.min.js"></script>
-    <!-- swiper js -->
-    <script src="js/plugins/swiper.min.js"></script>
-    <!-- fancybox js -->
-    <script src="js/plugins/fancybox.min.js"></script>
-    <!-- gsap js -->
-    <script src="js/plugins/gsap.min.js"></script>
-    <!-- scroll smoother -->
-    <script src="js/plugins/smooth-scroll.js"></script>
-    <!-- scroll trigger js -->
-    <script src="js/plugins/ScrollTrigger.min.js"></script>
-    <!-- scroll to js -->
-    <script src="js/plugins/ScrollTo.min.js"></script>
-    <!-- ashley js -->
-    <script src="js/main.js"></script>
+      <!-- footer -->
+      <footer
+        class="footer-mil-dark-bg"
+        style="background-color: #00741f; color: #fff"
+      >
+        <div class="container py-5">
+          <div class="row justify-content-between">
+            <!-- Logo and About Section -->
+            <div class="col-md-3">
+              <div class="footer-logo">
+                <img
+                  src="img/indofon.svg"
+                  alt="Indofon Logo"
+                  style="width: 100%; height: auto"
+                />
+              </div>
+              <p class="footer-text mt-3">
+                Indofon hadir untuk memberikan solusi plafon PVC berkualitas
+                tinggi dengan desain modern dan ketahanan yang luar biasa,
+                menciptakan ruang yang nyaman dan elegan.
+              </p>
+            </div>
+
+            <!-- Contacts Section -->
+            <div class="col-md-3">
+              <h5 class="footer-title">Kontak</h5>
+              <p><i class="fas fa-phone"></i> +62 123 456 789</p>
+              <p><i class="fas fa-phone"></i> +62 987 654 321</p>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Jl. Sudirman, Jakarta,
+                Indonesia
+              </p>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="col-md-3">
+              <h5 class="footer-title">Alamat Pabrik Kami</h5>
+              <p class="mb-4">
+                Temukan kami di peta untuk kunjungan atau kebutuhan lainnya.
+              </p>
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.7982628458335!2d-122.08424968469026!3d37.42199997982198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba2bb06e69e3%3A0x3a6d6d6d6d6d6d6!2sGoogleplex!5e0!3m2!1sen!2sid!4v1619756600374!5m2!1sen!2sid"
+                  width="100%"
+                  height="200"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col text-center">
+              <p>
+                © Hak Cipta 2024 - Indofon.
+                <a href="https://gmtinnovation.com/">by.gmtinnovation</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+                 <!-- footer end -->
+          </div>
+          <!-- wrapper end -->
+
+          <!-- jQuery js -->
+          <script src="js/plugins/jquery.min.js"></script>
+          <!-- swup js -->
+          <script src="js/plugins/swup.min.js"></script>
+          <!-- swiper js -->
+          <script src="js/plugins/swiper.min.js"></script>
+          <!-- fancybox js -->
+          <script src="js/plugins/fancybox.min.js"></script>
+          <!-- gsap js -->
+          <script src="js/plugins/gsap.min.js"></script>
+          <!-- scroll smoother -->
+          <script src="js/plugins/smooth-scroll.js"></script>
+          <!-- scroll trigger js -->
+          <script src="js/plugins/ScrollTrigger.min.js"></script>
+          <!-- scroll to js -->
+          <script src="js/plugins/ScrollTo.min.js"></script>
+          <!-- ashley js -->
+          <script src="js/main.js"></script>
+        </body>
+      </html>
+    </div>
   </body>
 </html>
