@@ -2023,7 +2023,9 @@ lines
   stroke: rgb(255, 255, 255);
 }
 
+
 /* -------------------------------------------
+
 
 dodecahedron
 
@@ -3723,6 +3725,7 @@ accordion
 .mil-accordion-group .mil-accordion-menu .mil-symbol .mil-plus,
 .mil-accordion-group .mil-accordion-menu .mil-symbol .mil-minus {
   position: absolute;
+ 
 }
 .mil-accordion-group .mil-accordion-menu .mil-symbol .mil-minus {
   -webkit-transform: translateY(-2px);
